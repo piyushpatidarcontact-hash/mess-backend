@@ -16,10 +16,7 @@ const app = express();
 
 // Allow requests from frontend
 app.use(cors({
-  origin: [
-    'http://localhost:3000',
-    'https://your-frontend-url.onrender.com'
-  ],
+  origin: true,
   credentials: true
 }));
 
