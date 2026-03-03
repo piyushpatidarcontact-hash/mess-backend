@@ -16,7 +16,10 @@ const app = express();
 
 // Allow requests from frontend
 app.use(cors({
-  origin: true,
+  origin: [
+    "http://localhost:5173",
+    "https://mess-frontend-2lra.onrender.com"
+  ],
   credentials: true
 }));
 
